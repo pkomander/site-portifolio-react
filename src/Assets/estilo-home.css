@@ -1,0 +1,226 @@
+.background-color {
+    background-color: #F8F8FF;
+}
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.menu-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo-principal {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.menu-nav {
+    /* width: 100%; */
+    background-color: white;
+    border-bottom: 1px solid #d2d2f8;
+}
+
+.menu-nav-link {
+    display: flex;
+}
+
+.menu-nav-link-link {
+    display: flex;
+    border: 1px solid #d2d2f8;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2%;
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------------------------------------------------------- MAIN ----------------------------------------------- */
+
+.imgPaulo {
+    display: flex;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+/* se usar o flex direction row, e possivel utilizar o justifi-content  */
+.dados {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dados , a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(136, 136, 170);
+}
+
+#sobre, #formacoes, #projetos {
+    font-size: 30px;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #d2d2f8;
+}
+
+.titulo-secundario {
+    margin-top: 4%;
+    margin-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-secundario, p {
+    margin-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.titulo-secundario, li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.conteudoPrincipal {
+    width: 100%;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.tecnologias-link {
+    width: 25%;
+    margin: 1%;
+    background-color: white;
+    border: 5px solid #d2d2f8;
+    border-radius: 5px;
+    color: black;
+    list-style: none;
+    padding: 2%;
+    text-align: justify;
+}
+
+#tecnologias-hover:hover {
+    width: 26%;
+    border-color: #b2b2e7;
+}
+
+.redimensionar-img-linguagem {
+    width: 50%;
+    margin: 2%;
+    padding-left: 25%;
+}
+
+.redimensionar-img {
+    width: 100%;
+    margin: 2%;
+}
+
+
+
+
+/* ---------------------------------------------------- footer ----------------------------------------------- */
+
+
+.rodape {
+    width: 98%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+    border-top: 1px solid #d2d2f8;
+}
+
+@media (max-width: 768px){
+
+    .menu-nav, h1 {
+        flex-direction: column;
+        text-align: center;
+        /* width: 80%;
+        padding-top: 20%;
+        padding-bottom: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end; */
+    }
+
+    .menu-nav .container, nav {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: justify;
+        width: 80%;
+        padding-top: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .imgPaulo {
+        display: flex;
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-left: 35%;
+        margin-top: 2%;
+    }
+
+    .dados {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        list-style: none;
+        text-decoration: none;
+        margin-left: 15%;
+    }
+
+    .titulo-secundario {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .tecnologias-link {
+        width: 100%;
+        margin: 1%;
+        background-color: white;
+        border: 5px solid #d2d2f8;
+        border-radius: 5px;
+        color: black;
+        list-style: none;
+        padding: 2%;
+        text-align: justify;
+        align-items: center;
+    }
+
+    #media-alinhamento {
+        margin-left: 10%;
+    }
+
+    #tecnologias-hover {
+        margin-right: 15%;
+    }
+}
